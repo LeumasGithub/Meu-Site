@@ -1,14 +1,14 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+    --botao-azul: rgb(67, 67, 235);
+    --cor-de-fundo: #0d256d;
     --fonte-principal: 'Inter';
     --botao-azul-efeito: #3c92fa;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: black;
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
@@ -21,9 +21,9 @@ body {
 }
 
 .principal {
-    background-image: url("img/Background.png");
+    background-image: url("img/Background.jpeg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     align-items: center;
     text-align: center;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .container__botao {
-    background-color: var(--botao-azul);
+    background-image: var(--botao-azul);
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
@@ -45,7 +45,7 @@ body {
 }
 
 .botao_secundario {
-    background-color: transparent;
+    background-color: blue;
     border: 2px solid var(--branco-principal)
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .secundario__botao {
-    display: inline-block;
+    display: var(--botao-azul-efeito);
     margin-top: 1em;
 }
 
@@ -129,7 +129,7 @@ body {
     margin-top: 1em;
 }
 
-.lista__link a{
+.lista__link a {
     text-decoration: none;
     color: var(--branco-principal);
     margin-left: 1em;
